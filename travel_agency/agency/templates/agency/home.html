@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About Us</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Our Travel Agency!</h1>
+            <p>Your dream vacation awaits.</p>
+        </section>
+
+        <section class="featured-destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destination-cards">
+                <div class="card">
+                    <img src="{% static 'images/destination1.jpg' %}" alt="Destination 1">
+                    <p>Destination 1</p>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/destination2.jpg' %}" alt="Destination 2">
+                    <p>Destination 2</p>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/destination3.jpg' %}" alt="Destination 3">
+                    <p>Destination 3</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <p>"Great experience! Highly recommend this agency."</p>
+            <p>"The best travel agency I've worked with!"</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Travel Agency. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="{% static 'scripts.js' %}"></script> <!-- Add your JS file -->
+</body>
+</html>

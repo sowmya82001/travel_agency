@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour List</title>
+</head>
+<body>
+    <h1>Available Tours</h1>
+    <ul>
+        {% for tour in tours %}
+            <li>{{ tour.name }} - ${{ tour.price }} 
+                <a href="{% url 'make_booking' tour.id %}">Book Now</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'customer_register' %}">Register as a customer</a>
+</body>
+</html>
